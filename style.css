@@ -1,0 +1,88 @@
+body
+{
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* VARIABLES */
+:root
+{
+    /* COLORS */
+    --border-color : #e8491d;
+    --active-link-color : #e8491d;
+    --header-bgcolor : #35424A;
+    --header-text-color : white;
+    --link-hover-color : #cccccc;
+
+}
+
+/* global design */
+.container
+{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header
+{
+    background-color: var(--header-bgcolor);
+    color: var(--header-text-color);
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: var(--border-color) 3px solid;
+}
+
+header a
+{
+    color: var(--header-text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li
+{
+    float: left;
+    display: inline;
+    padding: 0 30px 0 30px;
+}
+
+header #branding    
+{
+    float: left;
+}
+
+header #branding h1
+{
+    margin: 0;
+}
+
+header nav
+{
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current
+{
+    color: var(--active-link-color);
+    font-weight: bold;
+}
+
+header a:hover
+{
+    color: var(--link-hover-color);
+    font-weight: bold;
+}
